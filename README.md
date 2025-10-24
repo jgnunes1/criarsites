@@ -105,6 +105,3 @@ Este site é **estático** e pode ser hospedado em qualquer provedor gratuito ou
 - **Local**: Bangu, Rio de Janeiro — RJ
 
 ---
-
-> ✨ Este site foi construído com foco em **clareza, performance e conversão**.  
-> Boa sorte nos seus negócios online!
