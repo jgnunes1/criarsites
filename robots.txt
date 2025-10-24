@@ -1,0 +1,12 @@
+# robots.txt para https://SEU-DOMINIO-AQUI
+# Última atualização: 23 de outubro de 2025
+
+# Permite que todos os robôs acessem todo o site
+User-agent: *
+Allow: /
+
+# Bloqueia acesso à pasta de administração (se existir)
+Disallow: /admin/
+
+# Sitemap
+Sitemap: https://SEU-DOMINIO-AQUI/sitemap.xml

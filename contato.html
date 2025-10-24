@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contato — Criação de Sites com Jorge Nunes</title>
+  <meta name="description" content="Entre em contato para solicitar um orçamento de site profissional, SEO ou landing page. Atendimento em Bangu, Rio de Janeiro." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Contato — Jorge Nunes - Criação de Sites" />
+  <meta property="og:description" content="Solicite seu orçamento para site profissional, SEO ou loja virtual. Atendimento remoto e em Bangu, RJ." />
+  <meta property="og:url" content="https://SEU-DOMINIO-AQUI/contato.html" />
+  <meta property="og:type" content="website" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Botão flutuante WhatsApp -->
+  <a href="https://wa.me/5521997439311?text=Olá,%20Jorge!%20Gostaria%20de%20solicitar%20um%20orçamento%20para%20criação%20de%20site." 
+     class="whatsapp-float" target="_blank" aria-label="Fale no WhatsApp">
+    <img src="img/whatsapp-icon.svg" alt="WhatsApp" width="40" height="40" />
+  </a>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container">
+      <div class="logo">Jorge Nunes</div>
+      <nav class="nav-menu">
+        <a href="index.html">Home</a>
+        <a href="servicos.html">Serviços</a>
+        <a href="portfolio.html">Portfólio</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+      <a href="index.html#orcamento" class="cta-button">Solicitar Orçamento</a>
+      <div class="hamburger" id="hamburger">&#9776;</div>
+    </div>
+  </header>
+
+  <!-- Conteúdo principal -->
+  <main class="section">
+    <div class="container">
+      <h1>Entre em Contato</h1>
+      <p class="subtitle">Preencha o formulário ou fale diretamente pelo WhatsApp.</p>
+
+      <!-- Formulário de contato -->
+      <form 
+        id="contact-form" 
+        action="https://formspree.io/f/xnngkbog"
+        method="POST"
+        style="max-width: 600px; margin: 2rem auto;"
+      >
+        <!-- Honeypot anti-spam -->
+        <div style="display:none;">
+          <label for="honeypot">Leave this field empty:</label>
+          <input type="text" name="_gotcha" id="honeypot" />
+        </div>
+
+        <!-- Nome -->
+        <div style="margin-bottom: 1rem;">
+          <label for="nome">Nome *</label><br />
+          <input type="text" id="nome" name="nome" required 
+                 style="width: 100%; padding: 0.75rem; margin-top: 0.25rem; border: 1px solid #ddd; border-radius: var(--radius);" />
+        </div>
+
+        <!-- E-mail -->
+        <div style="margin-bottom: 1rem;">
+          <label for="email">E-mail *</label><br />
+          <input type="email" id="email" name="email" required 
+                 style="width: 100%; padding: 0.75rem; margin-top: 0.25rem; border: 1px solid #ddd; border-radius: var(--radius);" />
+        </div>
+
+        <!-- Telefone -->
+        <div style="margin-bottom: 1rem;">
+          <label for="telefone">Telefone (com DDD)</label><br />
+          <input type="tel" id="telefone" name="telefone" 
+                 placeholder="(21) 99999-9999"
+                 style="width: 100%; padding: 0.75rem; margin-top: 0.25rem; border: 1px solid #ddd; border-radius: var(--radius);" />
+        </div>
+
+        <!-- Empresa -->
+        <div style="margin-bottom: 1rem;">
+          <label for="empresa">Empresa / Profissão</label><br />
+          <input type="text" id="empresa" name="empresa" 
+                 style="width: 100%; padding: 0.75rem; margin-top: 0.25rem; border: 1px solid #ddd; border-radius: var(--radius);" />
+        </div>
+
+        <!-- Serviço de interesse -->
+        <div style="margin-bottom: 1rem;">
+          <label for="servico">Serviço de interesse *</label><br />
+          <select id="servico" name="servico" required 
+                  style="width: 100%; padding: 0.75rem; margin-top: 0.25rem; border: 1px solid #ddd; border-radius: var(--radius);">
+            <option value="">Selecione...</option>
+            <option value="site-institucional">Site Institucional</option>
+            <option value="landing-page">Landing Page de Conversão</option>
+            <option value="loja-online">Loja Online (E-commerce)</option>
+            <option value="blog-seo">Blog + SEO</option>
+            <option value="manutencao">Manutenção e Suporte</option>
+            <option value="outro">Outro</option>
+          </select>
+        </div>
+
+        <!-- Mensagem -->
+        <div style="margin-bottom: 1.5rem;">
+          <label for="mensagem">Mensagem *</label><br />
+          <textarea id="mensagem" name="mensagem" rows="5" required
+                    style="width: 100%; padding: 0.75rem; margin-top: 0.25rem; border: 1px solid #ddd; border-radius: var(--radius);"></textarea>
+        </div>
+
+        <!-- Botão enviar -->
+        <button type="submit" class="btn-primary" style="width: 100%;">Enviar Mensagem</button>
+      </form>
+
+      <!-- Contato rápido -->
+      <div class="section" style="padding: 2rem 0 0;">
+        <h2>Contato Rápido</h2>
+        <p>
+          E-mail: <a href="mailto:jgnunes@gmail.com">jgnunes@gmail.com</a><br />
+          WhatsApp: <a href="https://wa.me/5521997439311?text=Oi,%20tenho%20uma%20dúvida%20sobre%20seus%20serviços.">21 99743-9311</a><br />
+          Telefone: <a href="tel:+5521997439311">21 99743-9311</a>
+        </p>
+        <p>
+          Atendimento no bairro <strong>Bangu, Rio de Janeiro — RJ</strong>.<br />
+          Também atendo remotamente em todo o Brasil.
+        </p>
+
+        <!-- Mapa (opcional) -->
+        <!--
+        <div style="margin-top: 1.5rem;">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.0000000000005!2d-43.4963888!3d-22.8833333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997e9e8e8e8e8e8f%3A0x1234567890abcdef!2sBangu%2C%20Rio%20de%20Janeiro%20-%20RJ!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr" 
+            width="100%" 
+            height="300" 
+            style="border:0; border-radius: var(--radius);" 
+            allowfullscreen="" 
+            loading="lazy">
+          </iframe>
+        </div>
+        -->
+      </div>
+
+      <!-- Aviso de privacidade -->
+      <div style="margin-top: 2rem; font-size: 0.875rem; color: var(--gray-700);">
+        <p>
+          Ao enviar este formulário, você concorda com nossa 
+          <a href="politica-de-privacidade.html">Política de Privacidade</a>. 
+          Seus dados serão usados apenas para responder sua solicitação.
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div>
+          <h4>Jorge Nunes - Criação de Sites</h4>
+          <p>Bairro Bangu, Rio de Janeiro - RJ</p>
+          <p>Horário: Seg–Sex, 9h–18h</p>
+        </div>
+        <div>
+          <p><a href="mailto:jgnunes@gmail.com">jgnunes@gmail.com</a></p>
+          <p><a href="https://wa.me/5521997439311">WhatsApp: (21) 99743-9311</a></p>
+        </div>
+        <div>
+          <a href="politica-de-privacidade.html">Política de Privacidade</a><br>
+          <a href="termos.html">Termos de Uso</a><br>
+          <a href="sitemap.xml">Mapa do Site</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Jorge Nunes. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+
+  <!-- Instruções para Formspree -->
+  <!--
+    1. Substitua "YOUR-FORM-ID" por seu ID real do Formspree.
+    2. Cadastre-se em https://formspree.io/
+    3. Crie um novo formulário com o e-mail jgnunes@gmail.com
+    4. Copie o endpoint (ex: https://formspree.io/f/abcd1234)
+    5. Cole no atributo "action" acima.
+  -->
+</body>
+</html>

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio — Projetos de Sites e SEO por Jorge Nunes</title>
+  <meta name="description" content="Veja projetos reais de sites institucionais, landing pages e lojas virtuais desenvolvidos para profissionais liberais e empresas no Rio de Janeiro." />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Portfólio — Jorge Nunes - Criação de Sites" />
+  <meta property="og:description" content="Projetos de sites rápidos, responsivos e otimizados para SEO. Confira cases de sucesso com resultados reais." />
+  <meta property="og:url" content="https://SEU-DOMINIO-AQUI/portfolio.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://SEU-DOMINIO-AQUI/img/portfolio-og.jpg" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    /* Lightbox */
+    .lightbox {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.9);
+      z-index: 3000;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 1rem;
+      color: white;
+      text-align: center;
+    }
+    .lightbox img {
+      max-width: 90%;
+      max-height: 70vh;
+      margin-bottom: 1rem;
+      border-radius: var(--radius);
+    }
+    .lightbox-content h3,
+    .lightbox-content p {
+      margin: 0.5rem 0;
+    }
+    .lightbox-close {
+      position: absolute;
+      top: 1.5rem;
+      right: 1.5rem;
+      font-size: 2rem;
+      color: white;
+      cursor: pointer;
+    }
+    .portfolio-item {
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+    .portfolio-item:hover {
+      transform: translateY(-5px);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Botão flutuante WhatsApp -->
+  <a href="https://wa.me/5521997439311?text=Olá,%20Jorge!%20Gostaria%20de%20solicitar%20um%20orçamento%20para%20criação%20de%20site." 
+     class="whatsapp-float" target="_blank" aria-label="Fale no WhatsApp">
+    <img src="img/whatsapp-icon.svg" alt="WhatsApp" width="40" height="40" />
+  </a>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container">
+      <div class="logo">Jorge Nunes</div>
+      <nav class="nav-menu">
+        <a href="index.html">Home</a>
+        <a href="servicos.html">Serviços</a>
+        <a href="portfolio.html">Portfólio</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+      <a href="contato.html" class="cta-button">Solicitar Orçamento</a>
+      <div class="hamburger" id="hamburger">&#9776;</div>
+    </div>
+  </header>
+
+  <!-- Conteúdo principal -->
+  <main class="section">
+    <div class="container">
+      <h1>Nossos Projetos</h1>
+      <p class="subtitle">Sites rápidos, responsivos e otimizados para gerar resultados reais.</p>
+
+      <div class="portfolio-grid">
+        <!-- Projeto 1 -->
+        <div class="portfolio-item" data-title="Clínica Sorriso Saudável" data-sector="Odontologia" data-desc="Site institucional com agendamento online integrado ao WhatsApp." data-results="+35% agendamentos em 3 meses" data-tech="HTML, CSS, JavaScript, SEO técnico" data-link="#">
+          <img src="img/portfolio-dentista.webp" alt="Site para clínica odontológica em Bangu" loading="lazy" />
+          <h3>Clínica Sorriso Saudável</h3>
+          <p class="sector">Odontologia</p>
+          <p>+35% agendamentos em 3 meses</p>
+        </div>
+
+        <!-- Projeto 2 -->
+        <div class="portfolio-item" data-title="Escritório Silva & Associados" data-sector="Advocacia" data-desc="Site moderno com foco em credibilidade e geração de leads jurídicos." data-results="Tempo de carregamento: 1.2s" data-tech="HTML5, Tailwind CSS, Google Analytics" data-link="#">
+          <img src="img/portfolio-advocacia.webp" alt="Site para escritório de advocacia no Rio" loading="lazy" />
+          <h3>Escritório Silva & Associados</h3>
+          <p class="sector">Advocacia</p>
+          <p>Tempo de carregamento: 1.2s</p>
+        </div>
+
+        <!-- Projeto 3 -->
+        <div class="portfolio-item" data-title="Carreira em Foco" data-sector="Coaching" data-desc="Landing page de alta conversão para coach de carreira." data-results="Taxa de conversão: 8.2%" data-tech="HTML, CSS, WhatsApp API" data-link="#">
+          <img src="img/portfolio-coach.webp" alt="Landing page para coach de carreira" loading="lazy" />
+          <h3>Carreira em Foco</h3>
+          <p class="sector">Coaching</p>
+          <p>Taxa de conversão: 8.2%</p>
+        </div>
+
+        <!-- Projeto 4 -->
+        <div class="portfolio-item" data-title="Contábil RJ" data-sector="Contabilidade" data-desc="Site institucional com blog integrado e SEO local para Bangu e Zona Oeste." data-results="+50% tráfego orgânico em 4 meses" data-tech="HTML, CSS, WordPress, Yoast SEO" data-link="#">
+          <img src="img/portfolio-contabilidade.webp" alt="Site para escritório de contabilidade no Rio de Janeiro" loading="lazy" />
+          <h3>Contábil RJ</h3>
+          <p class="sector">Contabilidade</p>
+          <p>+50% tráfego orgânico em 4 meses</p>
+        </div>
+
+        <!-- Projeto 5 -->
+        <div class="portfolio-item" data-title="Loja Fit Suplementos" data-sector="E-commerce" data-desc="Loja virtual com catálogo de 200+ produtos e integração com Mercado Pago." data-results="R$ 12.000 em vendas no primeiro mês" data-tech="HTML, CSS, JavaScript, Mercado Pago API" data-link="#">
+          <img src="img/portfolio-ecommerce.webp" alt="Loja virtual de suplementos esportivos" loading="lazy" />
+          <h3>Loja Fit Suplementos</h3>
+          <p class="sector">E-commerce</p>
+          <p>R$ 12.000 em vendas no 1º mês</p>
+        </div>
+
+        <!-- Projeto 6 -->
+        <div class="portfolio-item" data-title="Dr. Paulo Cardiologista" data-sector="Medicina" data-desc="Site clean com foco em marca pessoal e agendamento digital." data-results="Redução de 40% em ligações não qualificadas" data-tech="HTML5, CSS3, Google Maps API" data-link="#">
+          <img src="img/portfolio-medico.webp" alt="Site para cardiologista em Bangu" loading="lazy" />
+          <h3>Dr. Paulo Cardiologista</h3>
+          <p class="sector">Medicina</p>
+          <p>-40% ligações não qualificadas</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox">
+    <span class="lightbox-close" id="lightbox-close">&times;</span>
+    <img id="lightbox-img" src="" alt="" />
+    <div class="lightbox-content">
+      <h3 id="lightbox-title"></h3>
+      <p id="lightbox-sector"></p>
+      <p id="lightbox-desc"></p>
+      <p><strong>Resultados:</strong> <span id="lightbox-results"></span></p>
+      <p><strong>Tecnologias:</strong> <span id="lightbox-tech"></span></p>
+      <!-- Link fictício desativado; ative se tiver URLs reais -->
+      <!-- <a href="#" id="lightbox-link" target="_blank" class="btn-primary" style="margin-top: 1rem;">Visitar Site</a> -->
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div>
+          <h4>Jorge Nunes - Criação de Sites</h4>
+          <p>Bairro Bangu, Rio de Janeiro - RJ</p>
+          <p>Horário: Seg–Sex, 9h–18h</p>
+        </div>
+        <div>
+          <p><a href="mailto:jgnunes@gmail.com">jgnunes@gmail.com</a></p>
+          <p><a href="https://wa.me/5521997439311">WhatsApp: (21) 99743-9311</a></p>
+        </div>
+        <div>
+          <a href="politica-de-privacidade.html">Política de Privacidade</a><br>
+          <a href="termos.html">Termos de Uso</a><br>
+          <a href="sitemap.xml">Mapa do Site</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Jorge Nunes. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+  <script>
+    // Lightbox interativo
+    document.querySelectorAll('.portfolio-item').forEach(item => {
+      item.addEventListener('click', () => {
+        const title = item.getAttribute('data-title');
+        const sector = item.getAttribute('data-sector');
+        const desc = item.getAttribute('data-desc');
+        const results = item.getAttribute('data-results');
+        const tech = item.getAttribute('data-tech');
+        const imgSrc = item.querySelector('img').src;
+
+        document.getElementById('lightbox-img').src = imgSrc;
+        document.getElementById('lightbox-title').textContent = title;
+        document.getElementById('lightbox-sector').textContent = sector;
+        document.getElementById('lightbox-desc').textContent = desc;
+        document.getElementById('lightbox-results').textContent = results;
+        document.getElementById('lightbox-tech').textContent = tech;
+
+        document.getElementById('lightbox').style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+      });
+    });
+
+    // Fechar lightbox
+    document.getElementById('lightbox-close').addEventListener('click', () => {
+      document.getElementById('lightbox').style.display = 'none';
+      document.body.style.overflow = '';
+    });
+
+    window.addEventListener('click', (e) => {
+      if (e.target.id === 'lightbox') {
+        document.getElementById('lightbox').style.display = 'none';
+        document.body.style.overflow = '';
+      }
+    });
+
+    // Fechar com tecla Esc
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && document.getElementById('lightbox').style.display === 'flex') {
+        document.getElementById('lightbox').style.display = 'none';
+        document.body.style.overflow = '';
+      }
+    });
+  </script>
+</body>
+</html>
